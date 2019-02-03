@@ -7,4 +7,12 @@ export const MenuContainer = styled.div`
     flex-direction: column;
     height: 100vh;
     background-color: ${white};
+    
+    @media (max-width: 920px) {
+       transform: translate(-100%);
+       
+       .open {
+            margin-left: 0;
+       }
+    }   
 `;
