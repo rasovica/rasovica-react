@@ -8,11 +8,14 @@ export const MenuLink = styled.div`
     a {
         font-size: 20px;
         font-weight: normal;
+        font-family: Gotham Book, sans-serif;
+        text-transform: capitalize;
         display: block;
         color: ${gray};
         text-align: center;
         margin: 10px 0;
         line-height: 25px;
+        text-decoration: none;
         // Hover fill from left to right
         background: linear-gradient(to right, ${red} 25%, ${white} 25%);
         background-size: 200% 100%;

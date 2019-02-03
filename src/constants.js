@@ -11,3 +11,11 @@ export const font_size = [
   "16px",
   "16px",
 ];
+
+export const pages = [
+  "home",
+  "about",
+  "service",
+  "portfolio",
+  "contact",
+];
