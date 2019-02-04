@@ -66,7 +66,7 @@ const App = () => {
                     <MenuNavigation/>
                     <MenuSocial/>
                 </MenuContainer>
-                <CardContainer>
+                <CardContainer onScroll={updateActive}>
                     <Scrollbar style={{height: "100vh"}}>
                         <Parallax pages={5} scrolling ref={parallax}>
                             <ParallaxLayer offset={0} speed={0}>
