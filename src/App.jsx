@@ -1,5 +1,6 @@
 import React, {useRef, useCallback, useState, useMemo, useEffect} from 'react';
-import { Parallax, ParallaxLayer } from 'react-spring/addons'
+import {Parallax, ParallaxLayer} from 'react-spring/addons'
+import Scrollbar from "react-scrollbars-custom";
 
 import {MenuContainer} from "./components/menu/menu-container";
 import {MenuSocial} from "./components/menu/menu-social";
@@ -65,24 +66,26 @@ const App = () => {
                     <MenuNavigation/>
                     <MenuSocial/>
                 </MenuContainer>
-                <CardContainer onScroll={updateActive}>
-                    <Parallax pages={5} scrolling ref={parallax}>
-                        <ParallaxLayer offset={0} speed={0}>
-                            <Frontpgage/>
-                        </ParallaxLayer>
-                        <ParallaxLayer offset={1} speed={0}>
-                            About
-                        </ParallaxLayer>
-                        <ParallaxLayer offset={2} speed={0}>
-                            Service
-                        </ParallaxLayer>
-                        <ParallaxLayer offset={3} speed={0}>
-                            Portfolio
-                        </ParallaxLayer>
-                        <ParallaxLayer offset={4} speed={0}>
-                            Contact
-                        </ParallaxLayer>
-                    </Parallax>
+                <CardContainer>
+                    <Scrollbar style={{height: "100vh"}}>
+                        <Parallax pages={5} scrolling ref={parallax}>
+                            <ParallaxLayer offset={0} speed={0}>
+                                <Frontpgage/>
+                            </ParallaxLayer>
+                            <ParallaxLayer offset={1} speed={0}>
+                                About
+                            </ParallaxLayer>
+                            <ParallaxLayer offset={2} speed={0}>
+                                Service
+                            </ParallaxLayer>
+                            <ParallaxLayer offset={3} speed={0}>
+                                Portfolio
+                            </ParallaxLayer>
+                            <ParallaxLayer offset={4} speed={0}>
+                                Contact
+                            </ParallaxLayer>
+                        </Parallax>
+                    </Scrollbar>
                 </CardContainer>
             </Container>
         </appContext.Provider>
