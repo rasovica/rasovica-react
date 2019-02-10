@@ -23,7 +23,18 @@ export const MenuLink = styled.div`
         transition: all .5s ease-out;
     }
     
+    a:hover {
+        background-size: 200% 100%;
+        background-position: left bottom;
+        color: ${black};  
+    }
+    a.active:hover {
+        background-size: 400% 100%;
+        background-position: left bottom;
+    }
+    
     .active {
+        background-size: 400% 100%;
         background-position: left bottom;
         color: ${black};  
     }

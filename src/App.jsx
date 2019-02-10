@@ -9,6 +9,7 @@ import {CardContainer} from "./components/content/card-container";
 import {Container} from "./components/container";
 import {FirstPage} from "./components/first-page/first-page";
 import {MenuNavigation} from "./components/menu/menu-navigation";
+import {Seo} from "./components/seo";
 
 import {pages} from "./constants";
 
@@ -60,6 +61,7 @@ const App = () => {
 
     return (
         <appContext.Provider value={{page: [page, setPage], changePage: changePage}}>
+            <Seo/>
             <Container>
                 <MenuContainer>
                     <MenuLogo>rasovica</MenuLogo>
