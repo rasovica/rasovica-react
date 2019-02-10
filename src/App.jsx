@@ -7,7 +7,7 @@ import {MenuSocial} from "./components/menu/menu-social";
 import {MenuLogo} from "./components/menu/menu-logo";
 import {CardContainer} from "./components/content/card-container";
 import {Container} from "./components/container";
-import {Frontpgage} from "./components/content/front-page";
+import {FirstPage} from "./components/first-page/first-page";
 import {MenuNavigation} from "./components/menu/menu-navigation";
 
 import {pages} from "./constants";
@@ -70,7 +70,7 @@ const App = () => {
                     <Scrollbar style={{height: "100vh"}}>
                         <Parallax pages={5} scrolling ref={parallax}>
                             <ParallaxLayer offset={0} speed={0}>
-                                <Frontpgage/>
+                                <FirstPage/>
                             </ParallaxLayer>
                             <ParallaxLayer offset={1} speed={0}>
                                 About
